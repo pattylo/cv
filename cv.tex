@@ -1,0 +1,289 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Graduate Curriculum Vitae
+% LaTeX Template
+% Version 1.2 (3/28/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute 
+% (http://www.rpi.edu/dept/arc/training/latex/resumes/)
+%
+% Modified by:
+% Daniel L Marks <xleafr@gmail.com> 3/28/2015
+%
+% Important note:
+% This template requires the res.cls file to be in the same directory as the
+% .tex file. The res.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% You can have multiple style options the legal options ones are:
+%
+%   centered:	the name and address are centered at the top of the page 
+%				(default)
+%
+%   line:		the name is the left with a horizontal line then the address to
+%				the right
+%
+%   overlapped:	the section titles overlap the body text (default)
+%
+%   margin:		the section titles are to the left of the body text
+%		
+%   11pt:		use 11 point fonts instead of 10 point fonts
+%
+%   12pt:		use 12 point fonts instead of 10 point fonts
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[overlapped]{res} 
+
+% Default font is the helvetica postscript font
+\usepackage{helvet}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\newcommand{\pink}[1]{\textcolor{pink!40!red}{#1}} % Adjust the percentage as needed
+
+
+
+% Increase text height
+\textheight=728pt
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%-------------------------------------------------------------------------------
+\name{Patrick Li-Yu Lo}
+
+% Note that addresses can be used for other contact information:
+% -phone numbers
+% -email addresses
+% -linked-in profile
+
+\address{Born in Taipei, Taiwan\\Reside in Kowloon, Hong Kong}
+\address{\hfill liyulo1987@gmail.com \\ \pink{\texttt{\url{https://pattylo.github.io/}}}} 
+
+% Uncomment to add a third address
+%\address{Address 3 line 1\\Address 3 line 2\\Address 3 line 3}
+%-------------------------------------------------------------------------------
+
+\begin{resume}
+
+\begin{format}
+  \title{l}\dates{r}\\
+  % \employer{l}\location{r}\\
+  \body\\
+\end{format}
+
+%-------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\section{EDUCATION}
+\textbf{The Hong Kong Polytechnic University} \hfill \textit{Sep '22 - Aug '24}\\
+{\sl M.Phil. in Robotics \& Control, GPA: 3.77/4.3, Presidential Fellowship Scheme \\ 
+Department of Aeronautical and Aviation Engineering}\\ 
+\textbf{Thesis}: Relative State Estimation for Non-Inertial Control Systems
+\\ \\ 
+\textbf{The Hong Kong Polytechnic University} \hfill \textit{Sep '17 - Jun '21}\\
+{\sl B.Eng. (1st Honour), GPA: 3.75/4.3\\ 
+Department of Aeronautical and Aviation Engineering}\\ 
+\textbf{Thesis}: Vision-based Navigation of Quadrotor UAV
+\\ \\ 
+\textbf{University of Queensland, Australia} \hfill \textit{Feb '20 - Jul '20}\\
+{\sl Academic Exchange \\ 
+Department of Aerospace Engineering}
+\par\noindent\hrule width \linewidth % Horizontal line limited to the width of the page
+
+\section{EMPLOYMENT}
+\textbf{The Hong Kong University of Science and Technology} \hfill \textit{Jul '21 - Jul '22}\\
+{\sl Research Assistant\\
+Hong Kong Center for Construction Robotics}\\ 
+\textbf{Projects:} CV-based Construction Logistics Monitoring System; Controller Design for Prefabrication Components Installation.\\
+\textbf{Duties:} Conducted literature review on adversarial training; performed data augmentation; conducted image pre-processing; co-designed auxiliary hardware setup for better image captures; coded in Arduino \& PyTorch.
+
+\par\noindent\hrule width \linewidth % Horizontal line limited to the width of the page
+
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%-------------------------------------------------------------------------------
+\section{RESEARCH PUBLICATIONS}
+\begin{itemize}
+  \item \underline{\textbf{Lo, L. Y.}}, Y. Hu, B. Li, C.-Y. Wen, and Y. Yang, “An Adaptive Model Predictive Control for Unmanned Underwater Vehicles Subject to External Disturbances and Measurement Noise,” Accepted to 14th IEEE Asian Control Conference (ASCC), 2024. \textit{Links}: \pink{{\texttt{\href{https://pattylo.github.io/assets/pdf/ascc.pdf}{pdf}}} {\texttt{\href{https://github.com/HKPolyU-UAV/bluerov2/tree/eskf_obs2}{code}}}}
+  \item \underline{\textbf{Lo, L. Y.}}, B. Li, C.-Y. Wen, and C.-W. Chang, “Experimental Non-Robocentric Dynamic Landing of Quadrotor UAVs with On-Ground Sensor Suite,” Submitted to IEEE Transactions on Instrumentation and Measurement (TIM), 2024. \textit{Links}: \pink{{\texttt{\href{https://pattylo.github.io/assets/pdf/alan_tim.pdf}{pdf}}} {\texttt{\href{https://github.com/HKPolyU-UAV/ALAN}{code}}}} 
+  \item \underline{\textbf{Lo, L. Y.}}, B. Li, C.-Y. Wen, and C.-W. Chang, “Landing a Quadrotor on a Ground Vehicle without Exteroceptive Airborne Sensors: A Non-Robocentric Framework and Implementation,” in 2023 IEEE 26th International Conference on Intelligent Transportation Systems (ITSC). IEEE, 2023, pp. 6080–6087. \textit{Links}: \pink{{\texttt{\href{https://pattylo.github.io/assets/pdf/alan_conf_final.pdf}{pdf}}}}
+  % \item Jiang, B., Li, B., Zhou, W., \underline{\textbf{Lo, L. Y.}}, Chen, C. K., \& Wen, C. Y. (2022). Neural network based model predictive control for a quadrotor UAV. Aerospace, 9(8), 460. \underline{\texttt{\href{https://pattylo.github.io/}{webpage}}}
+  \item \underline{\textbf{Lo, L. Y.}}, C. H. Yiu, Y. Tang, A.-S. Yang, B. Li, and C.-Y. Wen, “Dynamic Object Tracking on Autonomous UAV System for Surveillance Applications,” Sensors, vol. 21, no. 23, p. 7888, 2021. Editor's Choice Article. \textit{Links}: \pink{{\texttt{\href{https://pattylo.github.io/assets/pdf/sensors-21-07888.pdf}{pdf}}} {\texttt{\href{https://github.com/HKPolyU-UAV/auto}{code}}}}
+\end{itemize}
+
+\par\noindent\hrule width \linewidth % Horizontal line limited to the width of the page
+\section{AWARDS \& SCHOLARSHIP}
+\begin{itemize}
+  \item First Runner-up of UAV Challenge, 2023 IEEE International Conference on Unmanned Aircraft System. \textit{Links}: \pink{
+    \texttt{\href{https://www.polyu.edu.hk/publications/pulse-polyu/issue/202308/achievements/aae-team-wins-first-runner-up-prize-at-icuas-23-uav-competition}{web}}
+  } 
+  \item PolyU Presidential Postgraduate Fellowship Scheme ('22 - '24).
+  \item Dean’s list of PolyU Faculty of Engineering: '17/18, '18/19 \& '20/21.
+  \item PolyU Undergraduate APEC Entry Scholarship ('17 - '21).
+\end{itemize}
+\par\noindent\hrule width \linewidth % Horizontal line limited to the width of the page
+
+%-------------------------------------------------------------------------------
+\section{SELECTED\\PROJECT}
+
+\textbf{Relative State Estimation for Non-Inertial Control Systems (Thesis)}  
+\hfill \textit{Sep '22 - Present} \\
+My thesis studies the relative state estimation problem for the feedback loop of non-inertial control systems (e.g., ground-centralized UAV-UGV heterogeneous teams) based on visual measurements and observed disturbance. 
+
+\begin{itemize}
+  \item \textbf{Main modules:} Investigated the unknown input problem in Kalman filters; designed adaptive extended state observer to extract the real input; fused the lump disturbance and control input into the prediction model of IEKF; performed stability analysis in the sense of Lyapunov for the observer.
+  \item \textbf{Tools:} C++/Python in ROS, Gazebo, PX4, Docker.
+  % \item \textbf{Achievements:} Paper accepted at \textit{2024 IEEE Asian Control Conference}.
+\end{itemize}
+
+\textbf{Observer-based MPC for Unmanned Underwater Vehicle}  
+\hfill \textit{Aug '23 - Mar  '24} \\
+We designed a novel error-state extended state observer subject to physical sensor models for adaptive nonlinear UUV MPC. 
+
+\begin{itemize}
+  \item \textbf{Main modules:} Investigated the IMU model and ESKF; applied Fossen's UUV equation to design the prediction model; integrated the lump disturbance into the prediction model; performed stability analysis in the sense of Lyapunov for both observer and controller.
+  \item \textbf{Tools:} C++/Python in ROS, Gazebo, Acados/Casadi, BlueROV2 SITL, Docker.
+  \item \textbf{Achievements:} Paper accepted at \textit{2024 IEEE Asian Control Conference}.
+\end{itemize}
+
+\textbf{Towards Non-Robocentric Dynamic Landing for Quadrotor UAVs} 
+\hfill \textit{Jul '22 - Aug  '23} \\
+We proposed a novel sensing configuration for the UAV dynamic landing problem where no airborne exteroceptive sensors were used.
+
+\begin{itemize}
+  \item \textbf{Main modules:} Carried out stereo camera image processing; proposed IEKF-based state estimator on SE(3); designed kinematic and dynamic constrained trajectory with differential flatness \& minimized jerk; coded PID outer-loop flight controller; conducted heterogeneous UAV-UGV hardware system design and physical experiments in VICON.
+  \item \textbf{Tools:} C++/Python in ROS, Gazebo, OSQP, PX4, Docker.
+  \item \textbf{Achievements:} Paper published in \textit{2023 IEEE International Conference on Intelligent Transportation System}; extended version submitted to \textit{IEEE Transactions on Instrumentation and Measurement}; knowledge transferred (partial) to \textit{HKSAR Environmental Protection Department}.
+\end{itemize}
+
+% \textbf{CV-based Construction Logistics Monitoring System} 
+% \\
+% Prototyped an enhanced Automatic License Plate Recognition (ALPR) system for trucks on construction sites which was a collaboration project with the industry.
+
+% \begin{itemize}
+%   \item \textbf{Main modules:} Conducted literature review on adversarial training; performed data augmentation; conducted image pre-processing; co-designed auxiliary hardware setup for better image captures.
+%   \item \textbf{Tools:} PyTorch, Arduino.
+%   \item \textbf{Achievements:} Knowledge transferred to \textit{Hong Kong Sun Hung Kai Properties}.
+% \end{itemize}
+
+\textbf{Vision-based Navigation of Quadrotor UAV} 
+\hfill \textit{Aug '20 - May  '21} \\
+We worked on a fully autonomous UAV with SLAM, dynamic object tracking, path planning, trajectory generation, and controller modules. The team specifically focused on SLAM and dynamic object tracking.
+
+\begin{itemize}
+  \item \textbf{Main modules:} Conducted CNN training for object detection; carried out stereo camera image processing; proposed EKF-based state estimator for object tracking; proposed visual-dynamic sensor fusion with TCN/LSTM models to solve the unknown input problem.
+  \item \textbf{Tools:} C++/Python in ROS, Gazebo, Darknet, OpenCV DNN, PyTorch, GTSAM, PX4.
+  \item \textbf{Achievements:} 2 papers were published in \textit{Sensors} and \textit{Aerospace} as an undergraduate RA; Github repo received $\sim$100 stars.
+\end{itemize}
+\par\noindent\hrule width \linewidth % Horizontal line limited to the width of the page
+
+%-------------------------------------------------------------------------------
+\section{CORE SKILLS \& KNOWLEDGE}
+\begin{itemize}
+  \item \textbf{State Estimation:} EKF, Graph-SLAM, Extended State Observer, Sensor-Fusion, Stereo Camera, LiDAR, IMU, Lie Theory.
+  \item \textbf{Control \& Optimization:} UAV \& UUV Dynamic Analysis, Optimal Control, Nonlinear Control Theory, Trajectory Generation, Convex Optimization, Machine Learning. 
+  \item \textbf{Software/Hardware:} ROS in C++/Python, Gazebo, PyTorch, GTSAM, Acados, Docker, PX4 (\& SITL), BlueROV2 (\& SITL).
+  \item \textbf{Links:} \pink{{\texttt{\href{https://pattylo.github.io/projects/}{Project Pages}}}, {\texttt{\href{https://github.com/pattylo/learning_jungle}{Learning Notes}}}}.
+\end{itemize}
+\par\noindent\hrule width \linewidth % Horizontal line limited to the width of the page
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+% Modify the format of each position
+
+
+% \employer{PTP Turbo Blankets}
+% \location{Austin, Texas}
+% \dates{May 2014-Present}
+% \title{\textbf{Content Marketing}}
+% \begin{position}
+% I produce our social media content, including some of our graphics. I develope our content strategies and impliment them upon approval. I maintain our company's online presence and showcase our industry expertise by leveraging our presence in the automotive racing and performance community.
+% \end{position}
+%-------------------------------------------------------------------------------
+\section{OTHERS}
+\begin{itemize}
+  \item \textbf{Languages}: English (IELTS 7.5), Mandarin (Native), Cantonese (Proficient), Taiwanese (Proficient).
+  \item \textbf{Services}: Reviewer of IEEE Transactions on Mechatronics; IEEE Sensor Journal; 2023 IEEE International Conference on Intelligent Transportation System.
+  \item \textbf{Volunteering}: Student ambassador of PolyU ('19-'21); Student/Teaching Assistant at HeartFire Education Service, China (Dec '19), African Evangelistic Enterprise, Rwanda (Jun '19), Royal University of Phnom Penh, Cambodia (May - Jun '18).
+\end{itemize}
+
+
+% \employer{The Hong Kong Polytechnic University}
+% \location{Hong Kong}
+% \dates{Jun '19 - Dec '23}
+% \title{\textbf{Teaching Assistant}}
+% \begin{position}
+% Course: ENG2002 Computer Programming, Sep-Dec '23; AAE1BN01 Introduction to Aviation Industry, Jun-Aug '23; COMP3S02 Socially Responsible Global Leadership in a Digital World (Rwanda), Jun '19.
+% \end{position}
+
+% \employer{IEEE}
+% \location{Hong Kong}
+% \dates{Sep '22 - Present}
+% \title{\textbf{Reviewer}}
+% \begin{position}
+% Journal/Conference: IEEE Transactions on Mechatronics; IEEE Sensor Journal; 2023 IEEE International Conference on Intelligent Transportation System.
+% \end{position}
+
+% \dates{May '18 - Jun '21}
+% \title{\textbf{Volunteering}}
+% \begin{position}
+% Events: Student ambassador of PolyU ('19-'21); Volunteer at HeartFire Education Service (Dec '19), African Evangelistic Enterprise (Jun '19), Royal University of Phnom Penh (May - Jun '18).
+% \end{position}
+
+% \dates{}
+% % \title{\textbf{Others}}
+% \title{}
+% \begin{position}
+% Languages: English (IELTS 7.5), Mandarin (Native), Cantonese (Proficient), Taiwanese (Proficient).\\
+% Hobbies: Guitar; Baseball; Skateboarding.
+% \end{position}
+% \section{SERVICE \& OTHERS}
+
+% \employer{The Hong Kong Polytechnic University}
+% \location{Hong Kong}
+% \dates{Jun '19 - Dec '23}
+% \title{\textbf{Teaching Assistant}}
+% \begin{position}
+% Course: ENG2002 Computer Programming, Sep-Dec '23; AAE1BN01 Introduction to Aviation Industry, Jun-Aug '23; COMP3S02 Socially Responsible Global Leadership in a Digital World (Rwanda), Jun '19.
+% \end{position}
+
+% \employer{IEEE}
+% \location{Hong Kong}
+% \dates{Sep '22 - Present}
+% \title{\textbf{Reviewer}}
+% \begin{position}
+% Journal/Conference: IEEE Transactions on Mechatronics; IEEE Sensor Journal; 2023 IEEE International Conference on Intelligent Transportation System.
+% \end{position}
+
+% \dates{May '18 - Jun '21}
+% \title{\textbf{Volunteering}}
+% \begin{position}
+% Events: Student ambassador of PolyU ('19-'21); Volunteer at HeartFire Education Service (Dec '19), African Evangelistic Enterprise (Jun '19), Royal University of Phnom Penh (May - Jun '18).
+% \end{position}
+
+% \dates{}
+% \title{\textbf{Others}}
+% \begin{position}
+% Languages: English (IELTS 7.5), Mandarin (Native), Cantonese (Proficient), Taiwanese (Proficient).\\
+% Hobbies: Guitar; Baseball; Skateboarding.
+% \end{position}
+
+\end{resume}
+\end{document}
