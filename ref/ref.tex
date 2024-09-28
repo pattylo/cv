@@ -1,0 +1,162 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out if you need a4paper
+
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4 paper
+
+\IEEEoverridecommandlockouts                              % This command is only needed if 
+                                                          % you want to use the \thanks command
+
+\overrideIEEEmargins                                      % Needed to meet printer requirements.
+
+%In case you encounter the following error:
+%Error 1010 The PDF file may be corrupt (unable to open PDF file) OR
+%Error 1000 An error occurred while parsing a contents stream. Unable to analyze the PDF file.
+%This is a known problem with pdfLaTeX conversion filter. The file cannot be opened with acrobat reader
+%Please use one of the alternatives below to circumvent this error by uncommenting one or the other
+%\pdfobjcompresslevel=0
+%\pdfminorversion=4
+
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+% The following packages can be found on http:\\www.ctan.org
+%\usepackage{graphics} % for pdf, bitmapped graphics files
+%\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{times} % assumes new font selection scheme installed
+%\usepackage{amsmath} % assumes amsmath package installed
+%\usepackage{amssymb}  % assumes amsmath package installed
+\usepackage{hyperref}
+% \usepackage[numbers]{natbib}
+\usepackage{mathtools}
+\usepackage {amsmath}
+\usepackage{amsfonts}
+\usepackage{tabularray}
+
+% \usepackage{algorithm}
+% \usepackage{algorithmic}
+\usepackage[ruled,linesnumbered]{algorithm2e}
+
+% \usepackage[showframe]{geometry}% http://ctan.org/pkg/geometry
+\usepackage{lipsum}% http://ctan.org/pkg/lipsum
+\usepackage{multicol}% http://ctan.org/pkg/multicols
+\usepackage{graphicx}% http://ctan.org/pkg/graphicx
+
+
+
+\title{\LARGE \bf
+Landing a Quadrotor on a Ground Vehicle without Exteroceptive Airborne Sensors:
+A Non-Robocentric Framework and Implementation*
+}
+
+
+\author{Li-Yu Lo$^{1}$ \IEEEmembership{Student Member, IEEE}, Boyang Li$^{2}$, Chih-Yung Wen$^{1}$, and Ching-Wei Chang$^{1\dagger}$ 
+% <-this % stops a space
+\thanks{*This research is funded by the Innovation and Technology Commission of 
+Hong Kong under grant number ITT/027/19GP and PolyU
+Presidential PhD Fellowship.}
+% <-this % stops a space
+\thanks{$^{1}$Li-Yu Lo, Chih-Yung Wen and Ching-Wei Chang
+        are with AIRo-LAB, Department of Aeronautical and Aviation Engineering, 
+        The Hong Kong Polytechnic University, 
+        Kowloon, Hong Kong 
+		(e-mail: patty.lo@connect.polyu.hk; chihyung.wen@polyu.edu.hk; chingwei.chang@connect.polyu.hk).
+        }
+\thanks{$^{2}$Boyang Li is with 
+School of Engineering, The University of Newcastle, 
+Callaghan, NSW 2308, Australia 
+(e-mail: boyang.li@newcastle.edu.au).
+    }%
+\thanks{$^{\dagger}$ corresponding author
+	}%
+}
+
+
+\begin{document}
+
+
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+
+        This research addresses the problem of a quadrotor UAV landing on a ground vehicle. 
+        Yet, unlike most existing literature, 
+        we transfer most sensing and computing tasks to the ground vehicle,
+        designing the landing system in a non-robocentric fashion.
+        Such a framework greatly alleviates the payload burden,
+        allowing more resource allocation for the quadrotor UAV. 
+        To validate the proposed framework, 
+        the implementation starts with relative pose estimation
+        through detection and tracking of LED markers on an aerial vehicle. 
+        The 6 DoF orientation and position information is 
+        then returned through a PnP-based algorithm. 
+        Successively, by considering the visibility and dynamic constraints
+		in the target local frame, 
+        the motion planning module computes an optimized landing trajectory, such 
+        that the aerial vehicle stays within a safety corridor and performs the landing mission. 
+        Through experiments, we demonstrate the 
+        applicability of this research work, 
+        in which a quadrotor could be guided remotely and landed on a moving ground 
+        vehicle smoothly without the support from any airborne exteroceptive  
+		sensors and computers. 
+
+\end{abstract}
+
+\section*{Supplementary Material}
+\label{sec:SM}
+Supporting video of this paper is available at:  \url{https://youtu.be/7wiCh46MQmc} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{INTRODUCTION}
+\cite{lo2021dynamic}\cite{lo2024adaptive}\cite{lo2023landing}
+	
+
+
+\addtolength{\textheight}{-0cm}   % This command serves to balance the column lengths
+                                  % on the last page of the document manually. It shortens
+                                  % the textheight of the last page by a suitable amount.
+                                  % This command does not take effect until the next page
+                                  % so it should come on the page before the last. Make
+                                  % sure that you do not shorten the textheight too much.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section*{APPENDIX}
+
+% Appendixes should appear before the acknowledgment.
+
+% \section*{ACKNOWLEDGMENT}
+
+% The preferred spelling of the word �acknowledgment� in America is without an �e� after the �g�. Avoid the stilted expression, �One of us (R. B. G.) thanks . . .�  Instead, try �R. B. G. thanks�. Put sponsor acknowledgments in the unnumbered footnote on the first page.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+
+
+\end{document}
